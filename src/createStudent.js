@@ -15,11 +15,11 @@
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
 
-const createStudent = (name) => {
-  const estudante = { name: name,
-    feedback: () => 'Eita pessoa boa!',
-  };
+const createStudent = (nome) => {
+  const estudante = { name: nome, feedback: () => 'Eita pessoa boa!' }; 
+  // Parametro name modificado devido ao erro do lint.
   return estudante;
 };
+// console.log(createStudent('Leandrão, o Lobo Solitário'));
 
 module.exports = createStudent;
